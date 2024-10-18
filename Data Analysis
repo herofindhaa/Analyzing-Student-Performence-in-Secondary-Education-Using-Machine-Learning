@@ -1,0 +1,22 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Load the dataset
+data = pd.read_csv('../data/student_data.csv')
+
+# Inspect the data
+print(data.head())
+
+# Visualize the distribution of final grades
+sns.histplot(data['final_grade'], bins=10, kde=True)
+plt.title('Distribution of Final Grades')
+plt.xlabel('Final Grade')
+plt.ylabel('Frequency')
+plt.show()
+
+# Analyze correlations
+correlation_matrix = data.corr()
+sns.heatmap(correlation_matrix, annot=True)
+plt.title('Correlation Matrix')
+plt.show()
