@@ -1,0 +1,13 @@
+# Student Performance Prediction Using Machine Learning
+
+## Overview
+This project aims to predict student performance in secondary education using machine learning techniques.
+
+## Dataset
+The dataset contains features such as gender, age, study time, previous grades, family income, attendance, and final grade.
+
+## Getting Started
+1. Clone the repository.
+2. Set up a virtual environment and install the required libraries:
+   ```bash
+   pip install -r requirements.txt
